@@ -34,7 +34,7 @@ Create a PR as per the format given below:
   <li>Read and understand the problem statement and the code given in the particular task folder.</li>
   <li>Find the bug.</li>
   <li>Edit, commit and push the changes.</li>
-  <li>Create the PR according to the format mentioned in the PULL_REQUEST_TEMPLATE.md in the .github folder.</li>
+  <li>Create the PR according to the format mentioned in the pull_request_template.md in the .github folder.</li>
 </ul>
 
 ## Note
