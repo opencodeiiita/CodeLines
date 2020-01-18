@@ -7,22 +7,22 @@ In order to help Rahul you have to choose maximum K(1<=K<=N) such that there exi
 which has the sum of sweetness level of all blocks belonging to that submatrix is less than or equal to D.
 Note:- It is guaranteed that you will always get a K(1<=K<=N). 
 
-INPUT
+INPUT   
 First line contains two integers N(1<=N<=1e3) and D(1<=D<=1e18).
 
 After first line, a NxN matrix A is given where each A[i][j](1<=A[i][j]<=1e9) represents sweetness level of that block.
 
 
-OUTPUT
+OUTPUT   
 Output a single integer K.
 
-SAMPLE TEST CASE
-Input:
-4 10
-1 1 2 3
-1 2 3 4
-1 2 2 3
-1 6 3 4
+SAMPLE TEST CASE   
+Input:   
+4 10   
+1 1 2 3  
+1 2 3 4  
+1 2 2 3  
+1 6 3 4  
 
-Output:
+Output:  
 2
