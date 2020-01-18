@@ -1,0 +1,2 @@
+Note that you cannot change the whole code but only some lines of the code can be modified or added.You have to do minimum additions and modifiactions .
+Please ensure that whenever you do a push request, do it in the Submissions folder with file name as ROLL_NUMBER.cpp (eg. IIT2019001.cpp).
