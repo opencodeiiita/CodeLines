@@ -10,7 +10,7 @@ Note:- It is guaranteed that you will always get a K(1<=K<=N).
 INPUT   
 First line contains two integers N(1<=N<=10^3) and D(1<=D<=10^18).
 
-After first line, a NxN matrix A is given where each A[i][j](1<=A[i][j]<=10^9) represents sweetness level of that block.
+After first line, a NxN matrix A is given where each element has value between 1 to 10^9.
 
 
 OUTPUT   
