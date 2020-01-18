@@ -2,7 +2,7 @@
 using namespace std;
 
 const int mex=1e8;
-bool arr[mex];
+bool arr[mex+1];
 
 int main()
 {
@@ -16,10 +16,10 @@ int main()
    
     arr[1]=true;
    
-    for(int i=2;i*i<mex;i++)
+    for(int i=2;i*i<mex+1;i++)
     {
         if(arr[i]==false)
-        for(int j=2*i;j<mex;j+=i)
+        for(int j=2*i;j<mex+1;j+=i)
         arr[j]=true;
     }
    
