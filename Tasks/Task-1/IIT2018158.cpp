@@ -1,16 +1,17 @@
-#include <stdio.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int mex=1e8;
-long long int arr[mex];
+const int mex=1e8+5;
+bool arr[mex]={false};
 
-void main()
+int main()
 {
+    
     int l,r;
    
     cin>>l>>r;
    
-    int cnt=1;
+    int cnt=0;
    
     arr[0]=true;
    
@@ -18,14 +19,16 @@ void main()
    
     for(int i=2;i<mex;i++)
     {
-        for(int j=i;j<mex;j++)
+        if(arr[i]==false)
+        for(int j=i+i;j<mex;j+=i)
         arr[j]=true;
     }
    
-    for(int i=l;i<r;i++)
+    for(int i=l;i<=r;i++)
     {
         if(arr[i]==false) cnt++;
     }
    
     cout<<cnt<<endl;
+    
 }
