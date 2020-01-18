@@ -1,28 +1,29 @@
-#include <stdio.h>
+#include <iostream>
 using namespace std;
 
 int mex=1e8;
-long long int arr[mex];
+bool arr[100000001];
 
-void main()
+int main()
 {
     int l,r;
    
     cin>>l>>r;
    
-    int cnt=1;
+    int cnt=0;
    
     arr[0]=true;
    
     arr[1]=true;
    
-    for(int i=2;i<mex;i++)
+    for(int i=2;i*i<=mex;i++)
     {
-        for(int j=i;j<mex;j++)
+        if(arr[i]==false)
+        for(int j=i*i;j<=mex;j+=i)
         arr[j]=true;
     }
    
-    for(int i=l;i<r;i++)
+    for(int i=l;i<=r;i++)
     {
         if(arr[i]==false) cnt++;
     }
